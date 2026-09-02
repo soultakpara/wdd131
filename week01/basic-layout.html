@@ -2,19 +2,35 @@
 <html lang="en">
 
 <head>
-   <link rel="stylesheet" href="styles/layout.css"> 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/layout.css">
 
-  <title>TAKPARA Soulémane | WDD 131</title>
-  
+  <title>WDD 131 - Dynamic Web Fundamentals | TAKPARA Soulémane</title>
+
+  <meta name="description"
+    content="WDD 131 Dynamic Web Fundamentals course page for TAKPARA Soulémane, featuring a basic web layout exercise.">
+
+  <meta name="author" content="TAKPARA Soulémane">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <script src="../scripts/getdates.js" defer></script>
 </head>
 
 <body>
 
   <header>
 
-    <h1>Header Content</h1>
+    
+      <span id="course-title">
+        WDD 131 - Dynamic Web Fundamentals
+      </span>
+    
 
     <nav>
       <ul>
@@ -27,22 +43,47 @@
 
   </header>
 
-  <div>
+  <main>
 
-    <main>
-      <section>
+    <h1>TAKPARA Soulémane</h1>
+
+    <div class="content">
+
+      <section class="card">
         <h2>Main Content</h2>
+        <p>
+          Welcome to my WDD 131 - Dynamic Web Fundamentals course page.
+          This page is part of my web development learning journey.
+        </p>
       </section>
-    </main>
 
-    <aside>
-      <h2>Aside Content</h2>
-    </aside>
+      <section class="card">
+        <h2>Aside Content</h2>
+        <p>
+          I am developing my skills in HTML, CSS, JavaScript,
+          responsive design, Flexbox, and CSS Grid.
+        </p>
+      </section>
 
-  </div>
+    </div>
+
+  </main>
 
   <footer>
-    <h2>Footer Content</h2>
+
+    <p>
+      <span id="currentyear"></span>
+      TAKPARA Soulémane | Benin
+    </p>
+
+    <p id="lastModified"></p>
+
+    <div class="social-links">
+      <a href="#" aria-label="Facebook">Facebook</a>
+      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      <a href="#" aria-label="Instagram">Instagram</a>
+    </div>
+
   </footer>
 
 </body>
