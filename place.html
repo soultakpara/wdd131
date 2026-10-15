@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A short introduction to Benin and the lakeside community of Ganvié.">
+    <meta name="theme-color" content="#155c45">
+    <title>Benin | A Place to Discover</title>
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <span class="benin-flag" aria-hidden="true"><span></span></span>
+        <h1>Benin</h1>
+        <p>West Africa <span aria-hidden="true">·</span> Gulf of Guinea</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="place" aria-labelledby="place-title">
+        <picture class="place__picture">
+          <source
+            media="(max-width: 42rem)"
+            type="image/webp"
+            sizes="100vw"
+            srcset="
+              https://images.unsplash.com/photo-1576950219198-8d52b25c038e?fit=crop&crop=entropy&fm=webp&q=82&w=640&h=820 640w,
+              https://images.unsplash.com/photo-1576950219198-8d52b25c038e?fit=crop&crop=entropy&fm=webp&q=82&w=960&h=1150 960w">
+          <img
+            src="https://images.unsplash.com/photo-1576950219198-8d52b25c038e?fit=crop&crop=entropy&fm=webp&q=82&w=1600&h=900"
+            srcset="
+              https://images.unsplash.com/photo-1576950219198-8d52b25c038e?fit=crop&crop=entropy&fm=webp&q=82&w=1200&h=760 1200w,
+              https://images.unsplash.com/photo-1576950219198-8d52b25c038e?fit=crop&crop=entropy&fm=webp&q=82&w=1800&h=980 1800w,
+              https://images.unsplash.com/photo-1576950219198-8d52b25c038e?fit=crop&crop=entropy&fm=webp&q=82&w=2400&h=1200 2400w"
+            sizes="100vw"
+            alt="A man rests in a boat at Ganvié, Benin."
+            width="1600"
+            height="900"
+            fetchpriority="high">
+        </picture>
+        <div class="place__shade" aria-hidden="true"></div>
+
+        <div class="place__intro">
+          <p class="eyebrow">A community on Lake Nokoué</p>
+          <h2 id="place-title">Ganvié</h2>
+          <p class="place__summary">On the water, everyday life moves by canoe through one of Benin’s most distinctive communities.</p>
+        </div>
+
+        <div class="place__cards">
+          <section class="info-card data-card" aria-labelledby="data-title">
+            <h2 id="data-title">Data</h2>
+            <dl class="facts-list">
+              <div><dt>Capital</dt><dd>Porto-Novo</dd></div>
+              <div><dt>Largest city</dt><dd>Cotonou</dd></div>
+              <div><dt>Region</dt><dd>West Africa</dd></div>
+              <div><dt>Official language</dt><dd>French</dd></div>
+              <div><dt>Currency</dt><dd>West African CFA franc</dd></div>
+              <div><dt>Time zone</dt><dd>WAT (UTC+1)</dd></div>
+            </dl>
+            <a class="text-link" href="https://benintourisme.bj/en/destinations/ganvie/" target="_blank" rel="noreferrer">Explore Ganvié with Benin Tourism <span aria-hidden="true">↗</span></a>
+          </section>
+
+          <section class="info-card weather-card" aria-labelledby="weather-title">
+            <div class="weather-card__heading">
+              <h2 id="weather-title">Weather</h2>
+            <img class="weather-icon" src="images/sunny.svg" alt="">
+            </div>
+            <p class="weather-card__place">Porto-Novo <span>Static sample</span></p>
+            <p class="weather-condition">Sunny</p>
+            <dl class="weather-list">
+              <div><dt>Temperature</dt><dd id="temperature">29 °C</dd></div>
+              <div><dt>Wind</dt><dd id="wind-speed">12 km/h</dd></div>
+              <div><dt>Wind chill</dt><dd id="wind-chill" aria-live="polite">N/A</dd></div>
+            </dl>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p><span id="current-year">2026</span> <span aria-hidden="true">·</span> Benin place page</p>
+      <p id="last-modified">Last modified: <time>15 October 2026</time></p>
+      <p class="photo-credit">Hero photograph by <a href="https://unsplash.com/photos/man-sitting-on-boat-RGsjc0D0p_o" target="_blank" rel="noreferrer">Joseph Keyser on Unsplash</a>.</p>
+    </footer>
+  </body>
+</html>
